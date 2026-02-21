@@ -1,0 +1,160 @@
+@import "./themes.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  ::selection {
+    background: rgb(var(--color-primary) / 0.3);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--color-background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-border));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--color-muted));
+  }
+}
+
+@layer components {
+  .neo-shadow {
+    box-shadow: 4px 4px 0px rgb(var(--color-border));
+  }
+
+  .neo-shadow-sm {
+    box-shadow: 2px 2px 0px rgb(var(--color-border));
+  }
+
+  .neo-shadow-lg {
+    box-shadow: 6px 6px 0px rgb(var(--color-border));
+  }
+
+  .neo-card {
+    @apply bg-surface border-3 border-border rounded-neo p-4;
+    box-shadow: 4px 4px 0px rgb(var(--color-border));
+    transition: box-shadow 150ms ease-out, transform 150ms ease-out;
+  }
+
+  .neo-btn {
+    @apply inline-flex items-center justify-center font-semibold border-3 border-border rounded-neo px-4 py-2 transition-all duration-150;
+    box-shadow: 4px 4px 0px rgb(var(--color-border));
+  }
+
+  .neo-btn:hover {
+    box-shadow: 6px 6px 0px rgb(var(--color-border));
+    transform: translate(-2px, -2px);
+  }
+
+  .neo-btn:active {
+    box-shadow: 2px 2px 0px rgb(var(--color-border));
+    transform: translate(2px, 2px);
+  }
+
+  .neo-input {
+    @apply w-full border-3 border-border rounded-neo px-3 py-2 bg-surface font-sans transition-all duration-150 text-foreground;
+  }
+
+  .neo-input:focus {
+    @apply outline-none;
+    border-color: rgb(var(--color-primary));
+    box-shadow: 0 0 0 3px rgb(var(--color-primary) / 0.2);
+  }
+
+  .neo-input::placeholder {
+    color: rgb(var(--color-muted));
+  }
+
+  .neo-input option {
+    @apply bg-surface text-foreground;
+  }
+}
+
+.ProseMirror {
+  @apply outline-none min-h-[400px] p-4 text-foreground;
+}
+
+.ProseMirror p {
+  @apply mb-3;
+}
+
+.ProseMirror h1 {
+  @apply text-3xl font-bold mb-4;
+}
+
+.ProseMirror h2 {
+  @apply text-2xl font-bold mb-3;
+}
+
+.ProseMirror h3 {
+  @apply text-xl font-semibold mb-2;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  @apply pl-6 mb-3;
+}
+
+.ProseMirror li {
+  @apply mb-1;
+}
+
+.ProseMirror blockquote {
+  @apply border-l-4 border-primary pl-4 italic my-3;
+}
+
+.ProseMirror a {
+  @apply text-primary underline;
+}
+
+.ProseMirror .timestamp-chip {
+  display: inline-block;
+  background: rgb(var(--color-primary) / 0.85);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.85em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ProseMirror .broll-marker {
+  display: inline-block;
+  background: rgb(var(--color-accent) / 0.2);
+  color: rgb(var(--color-text));
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  border: 2px solid rgb(var(--color-accent));
+}
+
+.ProseMirror .sponsor-segment {
+  display: block;
+  border-left: 4px solid rgb(var(--color-secondary));
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: rgb(var(--color-secondary) / 0.15);
+}

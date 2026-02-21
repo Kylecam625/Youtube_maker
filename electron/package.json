@@ -1,0 +1,13 @@
+{
+  "name": "youtubemaker-studio",
+  "version": "1.0.0",
+  "description": "YoutubeMaker Studio - AI-powered YouTube content creation",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "dependencies": {
+    "electron": "^33.0.0"
+  }
+}

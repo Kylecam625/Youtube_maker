@@ -1,0 +1,60 @@
+:root,
+[data-theme="midnight"] {
+  --color-primary: 187 134 252;
+  --color-secondary: 3 218 198;
+  --color-accent: 207 102 121;
+  --color-background: 18 18 18;
+  --color-surface: 30 30 46;
+  --color-text: 225 225 230;
+  --color-border: 51 51 68;
+  --color-muted: 136 136 153;
+  --color-glow: 187 134 252;
+}
+
+[data-theme="sunrise"] {
+  --color-primary: 255 107 53;
+  --color-secondary: 255 209 102;
+  --color-accent: 6 214 160;
+  --color-background: 255 252 242;
+  --color-surface: 255 248 232;
+  --color-text: 26 26 46;
+  --color-border: 26 26 46;
+  --color-muted: 107 114 128;
+  --color-glow: 255 107 53;
+}
+
+[data-theme="ocean"] {
+  --color-primary: 67 97 238;
+  --color-secondary: 114 9 183;
+  --color-accent: 247 37 133;
+  --color-background: 240 244 255;
+  --color-surface: 228 236 255;
+  --color-text: 26 26 46;
+  --color-border: 26 26 46;
+  --color-muted: 107 114 128;
+  --color-glow: 67 97 238;
+}
+
+[data-theme="forest"] {
+  --color-primary: 45 106 79;
+  --color-secondary: 149 213 178;
+  --color-accent: 212 163 115;
+  --color-background: 245 245 240;
+  --color-surface: 236 238 230;
+  --color-text: 26 26 46;
+  --color-border: 26 26 46;
+  --color-muted: 107 114 128;
+  --color-glow: 45 106 79;
+}
+
+[data-theme="candy"] {
+  --color-primary: 255 94 91;
+  --color-secondary: 255 237 102;
+  --color-accent: 0 206 203;
+  --color-background: 255 255 252;
+  --color-surface: 255 245 245;
+  --color-text: 26 26 46;
+  --color-border: 26 26 46;
+  --color-muted: 107 114 128;
+  --color-glow: 255 94 91;
+}
